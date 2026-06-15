@@ -1,0 +1,8 @@
+name: "fins_led_analyzer"
+version: "0.1.0"
+description: "LED indicator light detection: color + blink frequency"
+maintainers:
+  - name: "Your Name"
+    email: "your.email@example.com"
+licenses:
+  - "MIT"
