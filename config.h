@@ -17,6 +17,10 @@ inline constexpr int ROI_H      = 64;
 inline constexpr int THRESH_ON  = 128;
 inline constexpr int THRESH_OFF = 64;
 
+// 颜色判定: 饱和度 delta < SATURATION_THRESH 视为白色，亮度 mx < BRIGHT_MIN_COLOR 视为无光
+inline constexpr int SATURATION_THRESH  = 15;
+inline constexpr int BRIGHT_MIN_COLOR   = 50;
+
 // 频率计算: 最近 N 秒内的亮灭周期
 inline constexpr double FREQ_WINDOW_SEC = 5.0;
 

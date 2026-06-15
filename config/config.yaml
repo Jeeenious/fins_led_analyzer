@@ -1,0 +1,33 @@
+# ==============================================================================
+# LED 指示灯分析参数
+# ==============================================================================
+
+brightness:
+  thresh_on: 128          # bright > 此值视为"亮"
+  thresh_off: 64          # bright < 此值视为"灭"（自适应模式下由 min/max 中点覆盖）
+
+color:
+  saturation_thresh: 15   # delta < 此值视为白色（饱和度不足）
+  bright_min: 50          # mx < 此值视为无光
+
+  # HSV 色相区间映射 (H in degrees 0-360)
+  # red 跨 0 度线，分两段: [0, h_red_end) 和 [h_red2_start, 360)
+  h_red_end: 15
+  h_red2_start: 345
+  h_orange_start: 15
+  h_orange_end: 40
+  h_yellow_start: 40
+  h_yellow_end: 65
+  h_green_start: 65
+  h_green_end: 170
+  h_cyan_start: 170
+  h_cyan_end: 195
+  h_blue_start: 195
+  h_blue_end: 260
+  h_purple_start: 260
+  h_purple_end: 310
+  h_pink_start: 310
+  h_pink_end: 345
+
+frequency:
+  window_sec: 5.0         # 频率计算滑动窗口（秒）
